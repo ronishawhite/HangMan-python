@@ -25,3 +25,6 @@ def main():
         print("Current Board: ",end="")
         printObscured(obscured) #print the current board
         guess = input("Guess a letter: ").lower() #get the lowe case version of the user guess
+        while 1: #loop until break
+            if validInput(guess): #if the input is valid
+                break #break loop
