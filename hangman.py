@@ -20,3 +20,5 @@ def main():
     gameOver = False #game initially not over
     success = False #assume game was not successful
     guesses = 0 #intitially 0 guesses
+    while not gameOver: #as long as the game is not over, enter loop
+        guesses+=1 #increment guesses
