@@ -22,3 +22,6 @@ def main():
     guesses = 0 #intitially 0 guesses
     while not gameOver: #as long as the game is not over, enter loop
         guesses+=1 #increment guesses
+        print("Current Board: ",end="")
+        printObscured(obscured) #print the current board
+        guess = input("Guess a letter: ").lower() #get the lowe case version of the user guess
