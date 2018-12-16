@@ -43,3 +43,5 @@ def main():
         if(letterInWord(guess,word)): #if letter is in the word
             print(guess,"in word!") #alert the user
             obscured = updateObscured(guess,obscured,word) #update the obscured word
+        else: #otherwise, alert the user
+            print(guess,"not in word!")
