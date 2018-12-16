@@ -45,3 +45,9 @@ def main():
             obscured = updateObscured(guess,obscured,word) #update the obscured word
         else: #otherwise, alert the user
             print(guess,"not in word!")
+        if word == obscured: #if the word is the obscured word now
+            gameOver = True #game is over
+            success = True #game was a success
+        elif guesses == 15:  #if guess is 15
+            gameOver = True #game is over
+    
