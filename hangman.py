@@ -38,3 +38,8 @@ def main():
             if validInput(guess): #if the input is valid
                 break #break loop
             guess = input("Enter a valid, single letter guess").lower() #request new input
+
+
+        if(letterInWord(guess,word)): #if letter is in the word
+            print(guess,"in word!") #alert the user
+            obscured = updateObscured(guess,obscured,word) #update the obscured word
