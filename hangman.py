@@ -13,6 +13,9 @@ def printObscured(obscured):
 def validInput(user_input):
     return len(user_input) == 1 and str.isalpha(user_input) #if the user input is of length 1 and is alphabetic
 
+def updateObscured(letter,obscured,word):
+    obscured = list(obscured) #change obscured string into a list
+    for i in range(len(word)): #loop through the length of the word
 
 def main():
     word = chooseWord() #choose a word
