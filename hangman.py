@@ -19,6 +19,9 @@ def letterInWord(letter,word):
 def updateObscured(letter,obscured,word):
     obscured = list(obscured) #change obscured string into a list
     for i in range(len(word)): #loop through the length of the word
+        if word[i] == letter: #if the letter at i is the letter given
+            obscured[i] = letter #update the obscured list at i to reflect that letter
+    return "".join(obscured) #join the list into a string
 
 def main():
     word = chooseWord() #choose a word
