@@ -50,4 +50,9 @@ def main():
             success = True #game was a success
         elif guesses == 15:  #if guess is 15
             gameOver = True #game is over
+    if success: #if the game was successgul
+        printObscured(obscured) #print the board
+        print("Word solved in",guesses,"guesses") #report guesses
+    else:
+        print("Max guesses reached. Word was:",word) #tell user answer
     
