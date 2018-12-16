@@ -28,3 +28,4 @@ def main():
         while 1: #loop until break
             if validInput(guess): #if the input is valid
                 break #break loop
+            guess = input("Enter a valid, single letter guess").lower() #request new input
